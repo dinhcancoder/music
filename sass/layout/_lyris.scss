@@ -1,0 +1,49 @@
+.lyris {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: 600px;
+  overflow-y: scroll;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #34224fd9;
+  border-radius: 8px;
+  padding: 40px 25px;
+  z-index: 1000;
+  transition: transform .28s ease-in-out;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+
+  &-text {
+    font-size: 1.72rem;
+    color: $white-color;
+    text-align: center;
+    letter-spacing: .2px;
+    line-height: 2;
+  }
+
+  &-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+    ion-icon {
+      font-size: 3.2rem;
+      color: $white-color;
+    }
+  }
+
+  &-opacity {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    opacity: .45;
+    z-index: 99;
+    z-index: 999;
+  }
+}
+
+.showLyris {
+  transform: translate(-50%, -50%) scale(1);
+}

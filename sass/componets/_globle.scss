@@ -1,0 +1,77 @@
+body {
+  font-family: $font;
+  background-color: $layout-bg;
+  overflow-x: hidden;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+.content {
+  padding: 0 60px;
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(transparent, #888);
+  bottom: 100rem;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: #333;
+  bottom: 100rem;
+}
+
+.icon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $alpha-bg;
+  }
+
+  ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &-box {
+    display: block;
+  }
+
+  &-box {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    bottom: 130%;
+    font-size: 1.12rem;
+    color: $white-color;
+    background-color: rgb(60, 60, 60);
+    padding: 2px 8px;
+    border-radius: 4px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      left: 50%;
+      bottom: -4.9px;
+      background-color: rgb(60, 60, 60);
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+}
