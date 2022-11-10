@@ -329,7 +329,7 @@ listSong.map((item, index) => {
 })
 
 let listItems = document.querySelectorAll('.item');
-song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
 
 play.addEventListener('click', playPause);
 btnPlay.addEventListener('click', playPause);
@@ -392,7 +392,7 @@ function changeSong(dir) {
   if (dir == 1) {
     if (isMix) {
       indexSong = Math.floor(Math.random() * listSong.length);
-      song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+      song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
       isPlaySong = true;
     } else {
       indexSong++;
@@ -405,7 +405,7 @@ function changeSong(dir) {
   } else if (dir === -1) {
     if (isMix) {
       indexSong = Math.floor(Math.random() * listSong.length);
-      song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+      song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
       isPlaySong = true;
     } else {
       indexSong--;
@@ -417,7 +417,7 @@ function changeSong(dir) {
     }
   };
 
-  song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+  song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
   playPause(indexSong);
   displayInfo(indexSong);
 }
@@ -443,30 +443,30 @@ let dialogImageBack = document.querySelector('.playerBack .player-dialogImage im
 let dialogNameBack = document.querySelector('.playerBack .player-dialogName');
 let dialogAuthorBack = document.querySelector('.playerBack .player-dialogAuthor');
 
-dialogImage.setAttribute('src', `../assets/image/${listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].avatar}`);
+dialogImage.setAttribute('src', `./assets/image/${listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].avatar}`);
 dialogName.textContent = listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].title;
 dialogAuthor.textContent = listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].author;
 
-dialogImageBack.setAttribute('src', `../assets/image/${listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].avatar}`);
+dialogImageBack.setAttribute('src', `./assets/image/${listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].avatar}`);
 dialogNameBack.textContent = listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].title;
 dialogAuthorBack.textContent = listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].author;
 
 function displayInfo(indexSong) {
-  musicAvatar.setAttribute('src', `../assets/image/${listSong[indexSong].avatar}`);
+  musicAvatar.setAttribute('src', `./assets/image/${listSong[indexSong].avatar}`);
   musicTitle.innerText = listSong[indexSong].title;
   musicSinger.innerText = listSong[indexSong].singer;
   musicLike.innerText = listSong[indexSong].like;
-  playerAvatar.setAttribute('src', `../assets/image/${listSong[indexSong].avatar}`);
+  playerAvatar.setAttribute('src', `./assets/image/${listSong[indexSong].avatar}`);
   playerTitle.innerText = listSong[indexSong].title;
   playerAuthor.innerText = listSong[indexSong].author;
-  moreAvatar.setAttribute('src', `../assets/image/${listSong[indexSong].avatar}`);
+  moreAvatar.setAttribute('src', `./assets/image/${listSong[indexSong].avatar}`);
   moreTitle.innerText = listSong[indexSong].title;
   viewLike.innerText = listSong[indexSong].tym;
   viewMusic.innerText = listSong[indexSong].listen;
-  dialogImage.setAttribute('src', `../assets/image/${listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].avatar}`);
+  dialogImage.setAttribute('src', `./assets/image/${listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].avatar}`);
   dialogName.textContent = listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].title;
   dialogAuthor.textContent = listSong[indexSong == (listSong.length - 1) ? 0 : (indexSong + 1)].author;
-  dialogImageBack.setAttribute('src', `../assets/image/${listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].avatar}`);
+  dialogImageBack.setAttribute('src', `./assets/image/${listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].avatar}`);
   dialogNameBack.textContent = listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].title;
   dialogAuthorBack.textContent = listSong[indexSong == 0 ? (listSong.length - 1) : (indexSong - 1)].author;
 }
@@ -576,7 +576,7 @@ for (let i = 0; i < musicPause.length; i++) {
   musicPause[i].addEventListener('click', () => {
     indexSong = i;
     isPlaySong = true;
-    song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+    song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
     playPause(indexSong);
     displayInfo(indexSong);
   })
@@ -585,7 +585,7 @@ for (let i = 0; i < musicName.length; i++) {
   musicName[i].addEventListener('click', () => {
     indexSong = i;
     isPlaySong = true;
-    song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+    song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
     playPause(indexSong);
     displayInfo(indexSong);
   })
@@ -605,7 +605,7 @@ for (let i = 0; i < listTitle.length; i++) {
   listTitle[i].addEventListener('click', () => {
     indexSong = i;
     isPlaySong = true;
-    song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+    song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
     playPause(indexSong);
     displayInfo(indexSong);
   })
@@ -616,7 +616,7 @@ for (let i = 0; i < listPause.length; i++) {
   listPause[i].addEventListener('click', () => {
     indexSong = i;
     isPlaySong = true;
-    song.setAttribute('src', `../assets/music/${listSong[indexSong].source}`);
+    song.setAttribute('src', `./assets/music/${listSong[indexSong].source}`);
     playPause(indexSong);
     displayInfo(indexSong);
   })
