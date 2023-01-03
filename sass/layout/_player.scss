@@ -20,7 +20,7 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
 
     > &:hover {
@@ -54,7 +54,7 @@
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 10px;
         height: 10px;
         bottom: -4.8px;
@@ -125,14 +125,14 @@
     height: 36px;
     border-radius: 50%;
     border: 2px solid $white-color;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     ion-icon {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-42%, -50%);
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
 
     &:hover {
@@ -243,7 +243,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       background-color: $hover-icon;
@@ -271,7 +271,7 @@
 
         &::before {
           position: absolute;
-          content: '';
+          content: "";
           width: 8px;
           height: 8px;
           background-color: #444;
@@ -311,7 +311,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: 93%;
       left: 50%;
       transform: translateX(-50%);
@@ -360,7 +360,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: hsla(0, 0%, 100%, .2);
+      background-color: hsla(0, 0%, 100%, 0.2);
     }
   }
 
@@ -454,13 +454,13 @@
 
   &-info {
     display: flex;
-    gap: 0 10px
+    gap: 0 10px;
   }
 
   &-div {
     h4 {
       text-transform: capitalize;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
         color: $link-hover;
@@ -526,7 +526,7 @@
       font-size: 1.7rem;
       color: inherit;
       color: $text-secondary;
-      transition: all .2s ease-in;
+      transition: all 0.2s ease-in;
     }
 
     &:hover {
@@ -544,7 +544,7 @@
     align-items: center;
     gap: 0 12px;
     color: inherit;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     ion-icon {
       font-size: 1.7rem;
@@ -562,7 +562,7 @@
     width: 230px;
     z-index: 99;
     background-color: $primary-color;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 20px;
     pointer-events: auto;

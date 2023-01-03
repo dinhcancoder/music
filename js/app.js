@@ -251,6 +251,30 @@ let listSong = [
     tym: "1.2M",
     listen: "25.6M",
   },
+  {
+    id: 20,
+    title: "Chạm khẽ tim anh một chút thôi",
+    avatar: "can.jpg",
+    author: "Kan Kan",
+    singer: "Kan Kan - 17/10/2022",
+    like: "218K người yêu thích",
+    time: "01:41",
+    source: "chamketimanh.mp3",
+    tym: "602K",
+    listen: "23.1M",
+  },
+  {
+    id: 21,
+    title: "Kỳ vòng sai lầm",
+    avatar: "can.jpg",
+    author: "Kan Kan",
+    singer: "Kan Kan - 17/10/2022",
+    like: "718K người yêu thích",
+    time: "01:41",
+    source: "kyvongsailam.mp3",
+    tym: "2.5MM",
+    listen: "33.7M",
+  },
 ];
 
 let song = document.querySelector(".song");

@@ -32,11 +32,11 @@
       color: $white-color;
       font-weight: 600;
       margin-top: 10px;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
         color: $link-hover;
-        letter-spacing: .2px;
+        letter-spacing: 0.2px;
       }
     }
 
@@ -79,7 +79,7 @@
 
 .category-item:not(.category-all) .category-box::before {
   position: absolute;
-  content: '';
+  content: "";
   inset: 0;
   background-image: linear-gradient(transparent, rgb(19, 32, 63));
 }
