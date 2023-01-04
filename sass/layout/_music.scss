@@ -8,7 +8,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 
     > img {
@@ -20,16 +20,16 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       inset: 0;
       z-index: 9;
       border-radius: 50%;
-      transition: .2s ease-in-out;
+      transition: 0.2s ease-in-out;
     }
 
     &:hover::before {
       background-color: black;
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 
@@ -110,7 +110,7 @@
   &-icons {
     display: flex;
     justify-content: center;
-    gap: 0 10px
+    gap: 0 10px;
   }
 
   &-icon {
@@ -197,7 +197,7 @@
   &-name {
     font-weight: 500;
     text-transform: capitalize;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
     &:hover {
       color: $link-hover;
@@ -215,7 +215,7 @@
 
   &-singer a {
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       color: $violet-color;
@@ -255,7 +255,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     ion-icon {
       position: relative;
@@ -318,7 +318,7 @@
 
   .music-boxRespon h2,
   .music-boxRespon p {
-    text-align: start;
+    text-align: center;
   }
 
   .music-control {
@@ -514,10 +514,10 @@
 
 .light .music-img::before {
   position: absolute;
-  content: '';
+  content: "";
   inset: 0;
   background-color: black;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .light .music-svg {
@@ -527,7 +527,7 @@
 
 .music-img::before {
   position: absolute;
-  content: '';
+  content: "";
   inset: 0;
 }
 
@@ -541,5 +541,5 @@
 
 .item:hover .music-img::before {
   background-color: black;
-  opacity: .4;
+  opacity: 0.4;
 }

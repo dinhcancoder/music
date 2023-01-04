@@ -1320,7 +1320,7 @@ body {
   }
   .music-boxRespon h2,
 .music-boxRespon p {
-    text-align: start;
+    text-align: center;
   }
   .music-control {
     display: flex;
