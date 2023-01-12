@@ -36,7 +36,7 @@
       font-size: 2.4rem;
       font-weight: 600;
       text-transform: capitalize;
-      letter-spacing: .3px;
+      letter-spacing: 0.3px;
     }
 
     ion-icon {
@@ -75,10 +75,10 @@
     &::before {
       display: none;
       position: absolute;
-      content: '';
+      content: "";
       inset: 0;
       background-color: black;
-      opacity: .4;
+      opacity: 0.4;
     }
 
     &:hover::before {
@@ -96,7 +96,7 @@
     a {
       display: block;
       width: 100px;
-      font-size: .85rem;
+      font-size: 0.85rem;
       color: $white-color;
       font-weight: 500;
       text-transform: uppercase;
@@ -106,7 +106,7 @@
       border-radius: 20px;
 
       &:hover {
-        opacity: .85;
+        opacity: 0.85;
       }
 
       &:first-child {
@@ -137,7 +137,7 @@
   position: fixed;
   inset: 0;
   background-color: black;
-  opacity: .45;
+  opacity: 0.45;
   z-index: 99;
 }
 

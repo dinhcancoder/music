@@ -1051,6 +1051,14 @@ body {
   font-size: 1.2rem;
   color: hsla(0deg, 0%, 100%, 0.5);
 }
+@media (max-width: 465px) {
+  .header-left img {
+    width: 20px;
+  }
+  .header-search > ion-icon {
+    font-size: 1.7rem;
+  }
+}
 
 .music {
   display: grid;
@@ -1284,6 +1292,16 @@ body {
 @media (max-width: 1400px) {
   .music-item {
     grid-template-columns: 1fr 180px 80px;
+  }
+}
+@media (max-width: 465px) {
+  .music-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
   }
 }
 

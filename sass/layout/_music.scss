@@ -274,6 +274,17 @@
       grid-template-columns: 1fr 180px 80px;
     }
   }
+
+  @include mb {
+    &-name {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
 }
 
 @media (max-width: 1300px) {
